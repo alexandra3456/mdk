@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <style>
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(198, 162, 147);
+            overflow-y: hidden;
+        }
+        .slick-control prev {
+            margin-top: 400px;
+            left: 1650px;
+        }
+        
+        .slick-control next {
+            right: 70px;
+            margin-top: 400px;
+        }
+        .container {
+       
+        width: 1100px;
+       
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        }
+        
+        .container .block{
+            margin: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 320px;
+            height: 380px;
+            background-color: rgb(219, 196, 180);
+            border-radius: 10px;
+            box-shadow: 0 0 20px #000;
+            transition: .7s;
+        }
+        
+        
+        .container .block:hover {
+        transform: translateY(-10px);
+        }
+        
+        
+        .container .block .content{
+            padding:30px;
+            text-align: center;
+        }
+        
+        .container .block .content .quate-img
+        {
+        width:50px;
+        }
+        
+        .container .block .content p {
+            color:rgb(0, 0, 0);
+            padding:70px 0;
+        }
+        
+        .container .block .content .face{
+            width:80px;
+            border-radius: 50%;
+            background-color: rgba(153, 110, 69, 0.788);
+            padding: 4px;
+        }
+        
+        .container .block .content h5 {
+            margin-top: 20px;
+            color:rgb(0, 0, 0);
+            font-size: 20px;
+            text-align: left;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+        .center {
+            width: 60%;
+            margin: auto;
+        
+        }
+        .sidebar {
+    
+    background-color: rgba(160, 122, 106);
+    margin-top: 0px;
+    height: 30%;
+    width: 200px; /* Ширина боковой панели */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -200px; /* Скрываем панель за пределами экрана */
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+    transition: 0.5s; /* Плавный переход для выдвижения панели */
+    padding-top: 60px; /* Отступ сверху */
+}
+
+.sidebar a {
+    
+    padding: 8px 8px 8px 32px; /* Отступы для ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 25px; /* Размер шрифта */
+    color: rgb(0, 0, 0); /* Цвет текста */
+    display: block; /* Блоковый элемент */
+    transition: 0.3s; /* Плавный переход для изменения цвета */
+}
+
+.sidebar a:hover {
+    background-color: rgb(188, 147, 130); /* Цвет текста при наведении */
+}
+
+.open-btn {
+    font-size: 40px; /* Размер шрифта кнопки */
+            cursor: pointer; /* Курсор в виде указателя */
+            background-color: rgba(28,28,28,0);
+            color: rgb(0, 0, 0); /* Цвет текста кнопки */
+            position: absolute; /* Позиционирование кнопки */
+            top: 10px; /* Отступ сверху */
+            left: 10px; /* Отступ слева */
+    
+}
+h1 {
+    position: absolute;
+
+            top: 20px; /* Отступ сверху */
+            left: 200px; /* Отступ слева */
+        }
+    
+            </style>
+        
+</head>
+<body>
+    
+    
+        <h1 style=" font-size: 60px;">Отзывы</h1>
+   
+
+    
+    <div class="open-btn" onclick="openSidebar()">☰</button></div>
+    
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" onclick="closeSidebar()" style="margin-top: -55px;">✖</a>
+        <a href="#">Адрес 1</a>
+        <a href="#">Адрес 2</a>
+        <a href="#">Адрес 3</a>
+    </div>
+    <div><img src="/картинки/image 13.png"></div>
+<div class="container slider">
+    <div class="block">
+        <div class="content">
+       
+            <p>Спасибо большое, очень понравилось данное заведение. 
+               Была во всех трёх кофейнях, понравилось абсолютно везде!!</p>
+            <img src="/картинки/моя фотка.jpg" class="face">
+            <h5>Alexandra</h5>
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="content">
+         
+            <p>Спасибо большое, очень понравилось данное заведение. 
+               Была во всех трёх кофейнях, понравилось абсолютно везде!!</p>
+            <img src="" class="face">
+            <h5>Tasya</h5>
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="content">
+            
+            <p>Спасибо большое, очень понравилось данное заведение. 
+               Была во всех трёх кофейнях, понравилось абсолютно везде!!</p>
+            <img src="" class="face">
+            <h5>Sofia</h5>
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="content">
+            
+            <p>Спасибо большое, очень понравилось данное заведение. 
+               Была во всех трёх кофейнях, понравилось абсолютно везде!!</p>
+            <img src="" class="face">
+            <h5>Sofia</h5>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Кнопки для слайдера -->
+
+<button class="slick-control next" style="margin-top:410px; margin-left:-50px;z-index: 1;background-color: rgba(160, 122, 106); border-radius:10px;width: 40px;">&#10095;</button>
+<button class="slick-control prev" style="margin-top:410px;margin-left:-100px;z-index: 1;background-color: rgba(160, 122, 106); border-radius:10px;width: 40px;">&#10094;</button>
+<script>
+    $(document).ready(function() {
+        var $slider = $('.slider');
+        $slider.slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false, // Отключаем встроенные стрелки
+            dots: true,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+        });
+
+        // Обработчики событий для кнопок
+        $('.slick-control.prev').on('click', function() {
+            $slider.slick('slickPrev');
+        });
+
+        $('.slick-control.next').on('click', function() {
+            $slider.slick('slickNext');
+        });
+    });
+</script>
+<!-- Кнопка для открытия боковой панели -->
+
+<script>
+    // Функция для открытия боковой панели
+    function openSidebar() {
+        document.getElementById("mySidebar").style.left = "0"; // Выдвигаем панель
+        document.body.style.marginleft = "200px"; // Сдвигаем контент вправо
+    }
+
+    // Функция для закрытия боковой панели
+    function closeSidebar() {
+        document.getElementById("mySidebar").style.left = "-200px"; // Возвращаем панель на место
+        document.body.style.marginleft = "0"; // Возвращаем контент в исходное положение
+    }
+</script>
+<div><img src="/картинки/image 13.png"></div>
+</body>
+</html>

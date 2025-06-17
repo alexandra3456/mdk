@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+    <style>
+        @font-face {
+  font-family: "Aclonica";
+  src: url("/шрифты/Aclonica-Regular.ttf");
+}
+@font-face {
+  font-family: "Kurale";
+  src: url("/шрифты/Kurale-Regular.ttf");
+}
+
+        body{
+
+            overflow: hidden;
+background: rgb(198, 162, 147);
+        }
+        a {
+            /* Menu */
+text-decoration:none;
+font-family: Aclonica;
+position: absolute;
+width: 145px;
+bottom: 890px;
+height: 54px;
+left: 57px;
+top: 27px;
+color: rgb(80, 36, 19);
+font-family: Aclonica;
+font-size: 48px;
+font-weight: 400;
+line-height: 54px;
+letter-spacing: 0%;
+text-align: left;
+        }
+h2{
+    /* Адрес 2 */
+font-family: Kurale;
+font-size: 48px;
+margin-left: 53px;
+margin-top:78px;
+z-index: 1;
+}
+
+.ellipse{
+border-radius: 50%;
+margin-top: -97px;
+width: 51px;
+height: 51px;
+margin-left: 182px;
+background: rgb(160, 122, 106);
+}
+
+.container {
+    margin-left:25%;
+    margin-top: 15%;
+width: 1200px;
+display:flex;
+justify-content: space-between;
+align-items:center;
+}
+
+.container .block{
+margin-bottom: 500px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 249px;
+    height: 404px;
+    background-color: #B68875;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #745c48;
+    transition: .7s;
+}
+
+
+.container .block:hover {
+transform: translateY(-50px);
+background-color: rgb(129, 83, 65);
+}
+
+
+.container .block .content{
+    margin-bottom: 300px;
+
+    padding:13px;
+    text-align: center;
+}
+
+
+.container .block .content h5 {
+    text-shadow: 2px 2px 4px rgba(143, 101, 77, 0.932); 
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom:120px;
+    font-weight: 700;
+    font-family: Aclonica;
+    
+}
+
+  </style>
+    <body>
+        <img src="/картинки/vector 2.png" style="position: absolute;width: 107.97px;height: 77.54px;left: -39px;top: 59.46px; ">
+   
+        <a href="/glavnaya1.html" style="font-size: 59px;">Menu</a>
+<h2>Адрес 1</h2>
+<div class="ellipse"></div>
+
+<div class="container">
+    <div class="block">
+        <div class="content">
+            <img src="/картинки/choc.png" style="width: 110%; margin-top:30px;">
+               <h5>Chocolate frappe with espresso shot</h5>
+         
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="content">
+            <img src="/картинки/latte.png" style=" width: 110%;">
+               <h5>Latte with bubble balls</h5>
+               
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="content">
+            <img src="/картинки/popcorn.png" style=" width: 100%; ">
+               <h5>Cappuccino with popcorn</h5>
+               
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="content">
+            <img src="/картинки/cold latte.png" style=" width: 130%; margin-bottom: 15px;margin-left:-25px" >
+               <h5>Cold nut latte</h5>
+        </div>
+    </div>
+    
+</div>
+
+    <img src="/картинки/кофе.png" style="z-index: -1;width: 900px;height:800px;margin-top: -25%; margin-left: 1850px;">
+   
+</body>
+        </html>

@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "Aclonica";
+    src: url("/шрифты/Aclonica-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Kurale";
+    src: url("/шрифты/Kurale-Regular.ttf");
+  }
+  body{
+    background: rgb(198, 162, 147);
+    }
+    header{
+        width:100%;
+        height: 50px;
+        display:flex;
+        justify-content: center;
+        
+    }
+    .x{
+        list-style-type: none;
+        padding: 10px 60px ;
+        width: 2000px;
+        display: flex;
+        justify-content: right;
+        gap: 20px;
+    }
+    .nav{
+        
+        font-family: Kurale;
+        text-decoration: none;
+        font-size: 34px;
+        color: black;
+    }
+    .first{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 800px;
+        justify-content: center;
+    }
+    .coffee{
+        text-align: center;
+        height: 800px;
+        width: 800px;
+        font-family: Aclonica;
+        letter-spacing: 0;
+    }
+    #cof1{
+        font-size: 185px;
+        font-weight: 700;
+    }
+    #cof2{
+        z-index: -1;
+        color: rgba(109, 72, 50, 0.699);
+        
+        font-size: 185px;
+        font-weight: 700;
+        position: relative;
+        bottom: 380px;
+    }
+   #ex{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    bottom: 600px;
+   }
+    .zerna{
+        z-index: -2;
+        position: relative;
+        bottom: 1000px;
+    }
+    .three{
+        height: 400px;
+        width: 400px;
+        font-size: 34px;
+        position: relative;
+        top: 200px;
+    }
+    .second{
+        width: 100%;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+    }
+    .cup{
+        width: 1000px;
+        height: 1000px;
+    }
+    #cup{
+        position: relative;
+        left: 200px;
+        bottom: 300px;
+    }
+
+    #sh1{
+        position: relative;
+        bottom: 1200px; ;
+        z-index: -2;
+    }
+    #sh2{
+        position: relative;
+        bottom: 2400px;
+        z-index: -1;
+    }
+    .third{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+    .adres1{
+        width: 1700px;
+        text-align: left;
+    }
+    .adr{
+        text-align: left;
+        font-family: Kurale;
+        font-size: 96px;
+        font-weight: 600;
+    }
+    .fourth{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 1000px;
+        justify-content: center;
+    }
+    
+    .adress{
+        width: 2000px;
+        height: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #a{
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        height: 800px;
+        font-family: Kurale;
+        font-size: 34px;
+        align-items: center;
+    }
+    #b{
+        width: 500px;
+        height: 500px;
+        border-radius: 10px white;
+        position: relative;
+        left: 40px;
+        bottom: 60px;
+    }
+    #c{
+        width: 500px;
+        height: 500px;
+    }
+    #d{
+        position: relative;
+        bottom: 45px;
+        left: 30px;
+    }
+    #f{
+        position: relative;
+        left: 50px;
+        bottom: 40px;
+    }
+    #m{
+        position: relative;
+        bottom: 50px;
+        left: 50px;
+    }
+    .fifth{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+    }
+    #z{
+        width: 2000px;
+        height: 500px;
+    }
+    footer{
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+    }
+    .l{
+        margin-left: 40px;
+        width: 2000px;
+        text-align: left;
+        font-family: Aclonica;
+        font-size: 34px;
+    }
+    #kon{
+        font-family: Aclonica;
+        font-size: 96px;
+        font-size: 400;
+        margin-bottom: 4px;
+    }
+    #y{
+        text-decoration: none;
+        color: black;
+    }
+   
+      
